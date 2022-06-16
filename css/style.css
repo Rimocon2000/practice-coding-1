@@ -129,7 +129,6 @@ a {
     text-align: center;
     margin: auto;
     color: #000000;
-    background-color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -152,13 +151,106 @@ a {
 /* ここからやり直す */
 .third_concept_group {
     display: flex;
+    /* flex-direction: row; */
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 10px;
 }
 
+.left_img_catalog {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.right_img_antique {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+
 /* .third_concept_groupセレクタは新たに作成した。正しいかは未だ不明 */
-.third_concept_group>.left_img_catalog {
+.third_concept_group>.left_img_catalog>img {
     width: 510px;
     height: 510px;
+}
+
+.third_concept_group>.right_img_antique>img {
+    width: 510px;
+    height: 510px;
+}
+
+.left_text>.button>a {
+    width: 150px;
+    border: 1px solid #2A2A2A;
+    padding: 15px 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: auto;
+    color: #000000;
+    cursor: pointer;
+}
+
+.left_text>.button>a:hover {
+    opacity: 0.5;
+}
+
+.left_text>.button>a:visited {
+    color: #000000;
+}
+
+.left_text>.button {
+    margin-top: 50px;
+}
+
+
+.right_text,
+.left_text {
+    font-size: 14px;
+    width: 510px;
+    height: auto;
+    text-align: center;
+}
+
+.right_text>p,
+.left_text>p {
+    margin-top: 30px;
+}
+
+
+.company {
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 336px;
+    color: #ffffff;
+}
+
+.company>div {
+    flex: 1;
+    margin: auto 50px;
+}
+
+.company>.list>ul {
+    font-size: 12px;
+    padding: 0;
+    list-style-type: "- ";
+}
+
+.company_discription>p {
+    font-size: 12px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
 }
 
 
@@ -171,5 +263,99 @@ a {
         width: 100%;
         height: 700px;
         object-fit: cover;
+        object-position: 50% 50%;
+        margin-bottom: 50px;
     }
+
+    .section_title {
+        margin: 10px;
+        padding: 0 15px;
+    }
+
+    #bet_img {
+        display: block;
+        /* width: 100%; */
+    }
+
+    .left_img,
+    .right_img {
+        margin: 20px auto 20px auto;
+        width: auto;
+    }
+
+    .fashion_text {
+        padding-top: 30px;
+    }
+
+    #sub_concept>.button {
+        margin: 40px;
+    }
+
+    #third_concept {
+        padding: 30px;
+    }
+
+    .third_concept_group {
+        display: block;
+        margin: 0;
+    }
+
+    .left_img_catalog,
+    .right_img_antique {
+        margin: 0;
+        padding: 0;
+    }
+
+    .third_concept_group>.left_img_catalog>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .third_concept_group>.right_img_antique>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right_text,
+    .left_text {
+        width: auto;
+    }
+
+    .right_text>h2,
+    .left_text>h2 {
+        margin: 50px auto;
+    }
+
+    .right_text>p,
+    .left_text>p {
+        text-align: left;
+    }
+
+    .left_text>.button {
+        margin-bottom: 50px;
+    }
+
+    .company {
+        display: block;
+        height: 500px;
+    }
+
+    .footer_logo {
+        text-align: center;
+
+    }
+
+    .footer_logo>a>img {
+        margin-top: 30px;
+    }
+
+    .company>.list {
+        margin-top: 40px;
+    }
+
+    .company>.company_discription {
+        margin-top: 40px;
+    }
+
+
 }
